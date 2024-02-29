@@ -1,0 +1,280 @@
+
+.nav{
+    width: 100%;
+    border-bottom: 2px solid #838391;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav>h1{
+    padding: 20px 0 20px 25px;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    padding-right: 25px;
+}
+
+li{
+   padding: 20px 0 20px 0;
+   font-weight: 600;
+   border-top: 5px solid hsl(194, 48%, 49%, 0);
+  
+}
+
+.link:hover{
+    color: #838391;
+    transition: 0.5s;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+li:nth-child(1):hover{
+    border-top: 5px solid hsl(194, 48%, 49%);
+}
+
+li:nth-child(2):hover{
+    border-top: 5px solid hsl(33, 82%, 61%);
+}
+
+li:nth-child(3):hover{
+    border-top: 5px solid hsl(263, 67%, 51%);
+}
+
+li:nth-child(4):hover{
+    border-top: 5px solid hsl(10, 63%, 51%);
+}
+
+li:nth-child(5):hover{
+    border-top: 5px solid hsl(2, 68%, 53%);
+}
+
+li:nth-child(6):hover{
+    border-top: 5px solid hsl(17, 73%, 46%);
+}
+
+li:nth-child(7):hover{
+    border-top: 5px solid hsl(169, 73%, 44%);
+}
+
+li:nth-child(8):hover{
+    border-top: 5px solid hsl(222, 87%, 56%);
+}
+
+.mercuryClass{
+    border-top: 5px solid hsl(194, 48%, 49%);
+    
+}
+
+.venusClass{
+    border-top: 5px solid hsl(33, 82%, 61%);
+}
+
+.earthClass{
+    border-top: 5px solid hsl(263, 67%, 51%);
+}
+
+.marsClass{
+    border-top: 5px solid hsl(10, 63%, 51%);
+}
+
+.jupiterClass{
+    border-top: 5px solid hsl(2, 68%, 53%);
+}
+
+.saturnClass{
+    border-top: 5px solid hsl(17, 73%, 46%);
+}
+
+.uranusClass{
+    border-top: 5px solid hsl(169, 73%, 44%);
+}
+
+.neptuneClass{
+    border-top: 5px solid hsl(222, 87%, 56%);
+}
+
+.default{
+    border-top: 5px solid hsl(194, 48%, 49%, 0);
+}
+
+.menuBar{
+    visibility: hidden;
+}
+
+.circle{
+   display: none;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+    .linkForMobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav{
+        width: 100%;
+        border: none;
+       display: block;
+    }
+
+    ul{
+        display: block;
+        list-style: none;
+        gap: 25px;
+        padding-right: 25px;
+    }
+
+    .nav>h1{
+        padding: 20px 25px 20px 25px;
+        border-bottom: 2px solid #838391;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+
+
+    li{
+       padding: 20px 0 20px 0;
+       border-top: none;
+      border-bottom: 1px solid #838391;
+    }
+
+    li:nth-child(1):hover,
+    li:nth-child(2):hover,
+    li:nth-child(3):hover,
+    li:nth-child(4):hover,
+    li:nth-child(5):hover,
+    li:nth-child(6):hover,
+    li:nth-child(7):hover,
+    li:nth-child(8):hover{
+        border-top: none;
+    }
+
+    .mercuryClass,
+    .venusClass,
+    .earthClass,
+    .marsClass,
+    .marsClass,
+    .jupiterClass,
+    .saturnClass,
+    .uranusClass,
+    .neptuneClass{
+        border-top: none;
+    }
+
+    
+
+.menuBar{
+    visibility: visible;
+    color: #838391;
+    padding: 0;
+   
+}
+
+.menuBarInActive{
+    color: white;
+}
+
+.displayNone{
+    display: none;
+   
+}
+
+.circle{
+   display:inline;
+}
+
+
+
+    .mercuryCircle{
+        color: hsl(194, 48%, 49%);
+    }
+
+    .venusCircle{
+        color: hsl(33, 82%, 61%);
+    }
+
+    .earthCircle{
+        color: hsl(263, 67%, 51%);
+    }
+
+    .marsCircle{
+        color: hsl(10, 63%, 51%);
+    }
+
+    .jupiterCircle{
+        color: hsl(2, 68%, 53%);
+    }
+
+    .saturnCircle{
+        color: hsl(17, 73%, 46%);
+    }
+
+    .uranusCircle{
+        color: hsl(169, 73%, 44%);
+    }
+
+    .neptuneCircle{
+        color: hsl(222, 87%, 56%);
+    }
+
+   
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .nav{
+        display: block;
+        text-align: center;
+    }
+
+    ul{
+        padding: 0;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    li{
+      font-size: small;
+    }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .nav{
+        display: block;
+        text-align: center;
+    }
+
+    
+    ul{
+        padding: 0;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    li{
+       padding: 20px 0 1px 0;
+       font-weight: 600;
+       border-top: 5px solid hsl(194, 48%, 49%, 0);
+      
+    }
+
+    .nav>h1{
+        padding: 20px 0 0 25px;
+        cursor: pointer;
+    }
+    
+}

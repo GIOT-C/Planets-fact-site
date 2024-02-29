@@ -1,0 +1,48 @@
+.jupiterImg {
+  width: 360px;
+  height: 360px;
+}
+
+.markedStructure,
+.markedOverview,
+.markedGeology {
+  background-color: hsl(2, 68%, 53%);
+  border: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .markedStructureForMobileScreen,
+  .markedOverviewForMobileScreen,
+  .markedGeologyForMobileScreen {
+    border-bottom: 4px solid hsl(2, 68%, 53%);
+  }
+
+  .overviewForMobileScreenHover:hover,
+  .structureForMobileScreenHover:hover,
+  .geologyForMobileScreenHover:hover {
+    transition: 0.5s;
+    border-bottom: 4px solid hsl(2, 68%, 53%);
+  }
+
+  .jupiterImg {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .jupiterImg {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .jupiterImg {
+    width: 300px;
+    height: 300px;
+  }
+}

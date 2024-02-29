@@ -1,0 +1,48 @@
+.uranusImg {
+  width: 340px;
+  height: 340px;
+}
+
+.markedStructure,
+.markedOverview,
+.markedGeology {
+  background-color: hsl(169, 73%, 44%);
+  border: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .markedStructureForMobileScreen,
+  .markedOverviewForMobileScreen,
+  .markedGeologyForMobileScreen {
+    border-bottom: 4px solid hsl(169, 73%, 44%);
+  }
+
+  .overviewForMobileScreenHover:hover,
+  .structureForMobileScreenHover:hover,
+  .geologyForMobileScreenHover:hover {
+    transition: 0.5s;
+    border-bottom: 4px solid hsl(169, 73%, 44%);
+  }
+
+  .uranusImg {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .uranusImg {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .uranusImg {
+    width: 300px;
+    height: 300px;
+  }
+}

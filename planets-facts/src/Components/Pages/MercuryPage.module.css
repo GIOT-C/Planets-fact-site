@@ -1,0 +1,48 @@
+.mercuryImg {
+  width: 200px;
+  height: 200px;
+}
+
+.markedStructure,
+.markedOverview,
+.markedGeology {
+  background-color: hsl(194, 48%, 49%);
+  border: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .markedStructureForMobileScreen,
+  .markedOverviewForMobileScreen,
+  .markedGeologyForMobileScreen {
+    border-bottom: 4px solid hsl(194, 48%, 49%);
+  }
+
+  .overviewForMobileScreenHover:hover,
+  .structureForMobileScreenHover:hover,
+  .geologyForMobileScreenHover:hover {
+    transition: 0.5s;
+    border-bottom: 4px solid hsl(194, 48%, 49%);
+  }
+
+  .mercuryImg {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .mercuryImg {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .mercuryImg {
+    width: 190px;
+    height: 190px;
+  }
+}

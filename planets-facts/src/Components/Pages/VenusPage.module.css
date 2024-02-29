@@ -1,0 +1,48 @@
+.venusImg {
+  width: 300px;
+  height: 300px;
+}
+
+.markedStructure,
+.markedOverview,
+.markedGeology {
+  background-color: hsl(33, 82%, 61%);
+  border: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .markedStructureForMobileScreen,
+  .markedOverviewForMobileScreen,
+  .markedGeologyForMobileScreen {
+    border-bottom: 4px solid hsl(33, 82%, 61%);
+  }
+
+  .overviewForMobileScreenHover:hover,
+  .structureForMobileScreenHover:hover,
+  .geologyForMobileScreenHover:hover {
+    transition: 0.5s;
+    border-bottom: 4px solid hsl(33, 82%, 61%);
+  }
+
+  .venusImg {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .venusImg {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .venusImg {
+    width: 280px;
+    height: 280px;
+  }
+}

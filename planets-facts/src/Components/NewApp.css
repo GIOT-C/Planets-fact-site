@@ -1,0 +1,296 @@
+.parentBodyContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bodyContainer {
+  width: 85%;
+  display: flex;
+}
+
+.planetImgContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.geologySurface {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 55%;
+}
+
+.planetName {
+  font-size: 40px;
+  padding: 10px 0 10px 0;
+}
+
+.source {
+  padding: 20px 0 20px 0;
+  color: #838391;
+}
+
+.source > a {
+  color: #838391;
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+span {
+  padding: 0 20px 0 20px;
+}
+
+.planetInfoContainer {
+  width: 40%;
+}
+
+.planetInfoMenu {
+  width: 100%;
+}
+
+.infoMenu {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #838391;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.overview:hover,
+.structure:hover,
+.geology:hover {
+  background-color: hsl(240, 17%, 26%);
+  transition: 0.5s;
+}
+
+.parentParameterContiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.parameterContiner {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameter {
+  width: 22%;
+  border: 1px solid #838391;
+}
+
+.parameter > p {
+  padding: 20px 0 0 20px;
+}
+
+.parameter > h1 {
+  padding: 10px 0 10px 20px;
+  font-size: x-large;
+}
+
+.infoMenuForMobileScreen {
+  visibility: hidden;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .onlyForMobileScreen {
+    width: 100%;
+    border-bottom: 2px solid #838391;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .infoMenuForMobileScreen {
+    visibility: visible;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 4px solid hsl(194, 48%, 49%, 0);
+  }
+
+  .bodyContainer {
+    width: 100%;
+    display: block;
+  }
+
+  .planetImgContainer {
+    width: 100%;
+    padding: 80px 0 80px 0;
+  }
+
+  .geologySurface {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 55%;
+  }
+
+  .planetInfoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info {
+    width: 80%;
+    text-align: center;
+  }
+
+  .planetName {
+    font-size: xx-large;
+  }
+
+  .planetInfoMenu {
+    display: none;
+  }
+
+  .parentParameterContiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .parameterContiner {
+    width: 80%;
+    display: block;
+  }
+
+  .parameter {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #838391;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+  }
+
+  .parameter > p {
+    padding: 0;
+  }
+
+  .parameter > h1 {
+    padding: 0;
+    font-size: x-large;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .bodyContainer {
+    width: 100%;
+    display: block;
+  }
+
+  .planetImgContainer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+  }
+
+  .planetInfoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info {
+    width: 45%;
+  }
+
+  .planetInfoMenu {
+    width: 45%;
+    padding-top: 50px;
+  }
+
+  .parentParameterContiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 20px 20px 20px;
+  }
+
+  .parameterContiner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .parameter {
+    width: 23%;
+    border: 1px solid #838391;
+  }
+
+  .parameter > p {
+    padding: 20px 0 0 20px;
+    font-size: small;
+  }
+
+  .parameter > h1 {
+    padding: 10px 0 15px 20px;
+    font-size: large;
+  }
+
+  .geologySurface {
+    top: 60%;
+  }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .bodyContainer {
+    width: 90%;
+  }
+
+  .geologySurface {
+    top: 60%;
+  }
+
+  .info {
+    padding: 0;
+  }
+
+  .planetName {
+    padding: 0;
+  }
+
+  .planetImgContainer {
+    width: 55%;
+  }
+
+  .planetInfoContainer {
+    width: 45%;
+  }
+
+  .parentParameterContiner {
+    padding-top: 10px;
+  }
+
+  .parameterContiner {
+    width: 95%;
+  }
+
+  .parameter {
+    width: 23%;
+  }
+
+  .parameter > p {
+    font-size: small;
+  }
+
+  .parameter > h1 {
+    padding: 10px 0 15px 20px;
+    font-size: large;
+  }
+}

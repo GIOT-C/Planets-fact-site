@@ -1,0 +1,48 @@
+.earthImg {
+  width: 320px;
+  height: 320px;
+}
+
+.markedStructure,
+.markedOverview,
+.markedGeology {
+  background-color: hsl(263, 67%, 51%);
+  border: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .markedStructureForMobileScreen,
+  .markedOverviewForMobileScreen,
+  .markedGeologyForMobileScreen {
+    border-bottom: 4px solid hsl(263, 67%, 51%);
+  }
+
+  .overviewForMobileScreenHover:hover,
+  .structureForMobileScreenHover:hover,
+  .geologyForMobileScreenHover:hover {
+    transition: 0.5s;
+    border-bottom: 4px solid hsl(263, 67%, 51%);
+  }
+
+  .earthImg {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .earthImg {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .earthImg {
+    width: 300px;
+    height: 300px;
+  }
+}
